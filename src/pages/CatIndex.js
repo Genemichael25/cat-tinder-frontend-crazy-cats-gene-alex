@@ -5,7 +5,7 @@ class CatIndex extends Component {
     render() {
         return(
             <>
-            <h1> CatIndex</h1>
+                <h1> CatIndex</h1>
             </>
         )
     }
