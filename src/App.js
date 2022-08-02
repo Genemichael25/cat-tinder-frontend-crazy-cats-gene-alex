@@ -11,7 +11,6 @@ import NotFound from "./pages/NotFound";
 import cats from "./mockCats";
 import {
   BrowserRouter as Router,
-  Rout,
   Route,
   Switch
 } from 'react-router-dom'

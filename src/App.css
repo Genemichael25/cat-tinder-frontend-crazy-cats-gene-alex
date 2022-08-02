@@ -1,12 +1,25 @@
 
 .Header {
-  background-color: lightgray;
-  color: aqua;
+  background-color: #FF6501 ;
+  color: black;
+  text-align: center;
+  height: 30vh;
+  background:linear-gradient(to bottom,#FF6501,#F1B416);
+  font-family: wildlife;
+}
+
+@font-face {
+  font-family: wildlife;
+  src: url(./assets/WildLifeRegular-1G6G2.ttf);
 }
 
 .Footer {
-  background-color: lightgray;
-  color: aqua;
+  background-color: #900000;
+  color: white;
+  text-align: center;
+  height: 20vh;
+  background:linear-gradient(to top,#900000,#F1B416 )
+  
 }
 
 .NotFound {
@@ -15,3 +28,19 @@
   width: auto;
 }
 
+.home { 
+  background-color: #F1B416;
+  height: 50vh;
+  
+}
+/* Scarlet
+#900000
+
+Black
+#000000
+
+Burnt Orange
+#FF6501
+
+Amber
+#F1B416 */

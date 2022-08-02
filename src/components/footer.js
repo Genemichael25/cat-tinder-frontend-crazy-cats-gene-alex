@@ -6,7 +6,7 @@ class Footer extends Component {
         return(
             <>
                 <div className="Footer">
-                    <h1>Footer</h1>
+                    <h4> Savannah Tinder © | Alex Ballou & Gene Martinez </h4>
                 </div>
             </>
         )
