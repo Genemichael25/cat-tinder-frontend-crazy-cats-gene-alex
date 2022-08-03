@@ -6,7 +6,7 @@ class Header extends Component {
         return(
             <>
                 <div className="Header">
-                    <h1 style={{fontSize:"100px"}}> Savannah Tinder</h1>
+                    <h1 style={{fontSize:"100px"}}>Savannah Tinder</h1>
                 </div>
             </>
         )
