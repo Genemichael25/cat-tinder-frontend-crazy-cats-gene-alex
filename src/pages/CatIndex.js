@@ -10,8 +10,6 @@ class CatIndex extends Component {
                 <h1>All our members</h1>
                 {this.props.cats && this.props.cats.map(cats => {
                     return(
-                      // <center >
-                      // <div class="card w-50" >
                         <Card  key={cats.id}>
                             <CardImg style = {{height:"auto", width:"auto"}} src={cats.image} alt="Card image cap" />
                             <CardBody>
@@ -22,8 +20,6 @@ class CatIndex extends Component {
                               </NavLink>
                             </CardBody>
                         </Card>
-                      // {/* </div>
-                      // </center> */}
                     )
                 })}
 
