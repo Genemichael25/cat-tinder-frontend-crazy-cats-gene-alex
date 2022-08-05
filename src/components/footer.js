@@ -7,7 +7,13 @@ class Footer extends Component {
             <>
                 <div className="Footer">
                     <div className="footer-text">
-                        <h4> Savannah Tinder © | Alex Ballou & Gene Martinez </h4>
+                        
+
+                        <footer style={{position:"absolute", bottom:"0", left:"10%", right:"10%"}}>
+                             {/* Savannah Tinder © | Alex Ballou & Gene Martinez */}
+                             <h4> Savannah Tinder © | Alex Ballou & Gene Martinez </h4>
+                             </footer>
+               
                     </div>
                 </div>
             </>
