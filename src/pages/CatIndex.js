@@ -8,19 +8,22 @@ class CatIndex extends Component {
         return(
             <>
                 <h1>All our members</h1>
-                {this.props.cats.map(cats => {
+                {this.props.cats && this.props.cats.map(cats => {
                     return(
-                    <Card key={cats.id}>
-                        <CardImg top width="100%" src={cats.image} alt="Card image cap" />
-                        <CardBody>
-                          <CardTitle>{cats.name}</CardTitle>
-                          <CardSubtitle>Age:{cats.age}</CardSubtitle>
-                          <NavLink to={`/catshow/${cats.id}`}>
-                            <Button>More info here</Button>
-                          </NavLink>
-                        </CardBody>
-                      </Card>
-
+                      // <center >
+                      // <div class="card w-50" >
+                        <Card  key={cats.id}>
+                            <CardImg style = {{height:"auto", width:"auto"}} src={cats.image} alt="Card image cap" />
+                            <CardBody>
+                              <CardTitle>{cats.name}</CardTitle>
+                              <CardSubtitle>Age:{cats.age}</CardSubtitle>
+                              <NavLink to={`/catshow/${cats.id}`}>
+                                <Button>More info here</Button>
+                              </NavLink>
+                            </CardBody>
+                        </Card>
+                      // {/* </div>
+                      // </center> */}
                     )
                 })}
 
