@@ -28,12 +28,14 @@ class App extends Component {
     console.log(cat)
   }
 
+  updateCat = (cat, id) => {
+    console.log("cat:", cat)
+    console.log("id:", id)
+  }
 
-
-
-
-
-
+  deleteCat = (id) => {
+    console.log("deleted", id)
+  }
 
   render() {
     // console.log(this.state.cats)
@@ -47,10 +49,14 @@ class App extends Component {
           <Route path="/catshow/:id" render={(props) => {
             let id = +props.match.params.id
             let cat = this.state.cats.find(cat => cat.id === id)
-            return <CatShow cat={cat} />
+            return <CatShow deleteCat={this.deleteCat} cat={cat} />
           }} />
           <Route path="/catnew" render={(props) => <CatNew createCat={this.createCat} />} />
-          <Route path="/catedit" component={CatEdit} />
+          <Route path="/catedit/:id" render={(props) => {
+            let id = +props.match.params.id
+            let cat = this.state.cats.find(cat => cat.id === id)
+            return <CatEdit updateCat={this.updateCat} cat={cat} />
+          }} />
           <Route component={NotFound}/>
         </Switch>
         <Footer />

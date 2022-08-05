@@ -33,6 +33,20 @@
   height: 50vh;
   
 }
+
+h1 {
+  text-align: center;
+  background-color: #F1B416;
+}
+
+center {
+  background-color: #F1B416;
+  margin-top: -8px;
+}
+
+/* .card {
+  height: 50vh;
+} */
 /* Scarlet
 #900000
 

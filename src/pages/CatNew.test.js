@@ -27,7 +27,6 @@ describe("Cat New exists", () => {
         expect(formGroup.length).toEqual(4)
         expect(formInputs.length).toEqual(4)
         expect(formLabel.length).toEqual(4)
-       
         // expect(formGroup).toContain("Label")
         // expect(new Set(formGroup)).toContain("Label")
         // console.log(formGroup.)
