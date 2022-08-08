@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Col, Card, CardTitle, CardText, Button } from 'reactstrap'
+import { Card, CardTitle, CardText, Button, Col , CardImg} from 'reactstrap'
 
 class CatShow extends Component {
     render() {
@@ -11,8 +11,8 @@ class CatShow extends Component {
             <center>
                 <Col sm="6">
                     <Card>
+                        <CardImg top width="100%" src={this.props.cat.image} alt="adorable cat" />
                         <CardTitle>Hi, my name is {this.props.cat.name}!</CardTitle>
-                        <img src={this.props.cat.image} alt="adorable cat" />
                         <CardText>I am {this.props.cat.age} years old. I enjoy  {this.props.cat.enjoys}.</CardText>
                         <NavLink to={`/catedit/${this.props.cat.id}`}>
                             <Button>
@@ -32,3 +32,4 @@ class CatShow extends Component {
 }
 
 export default CatShow
+                
