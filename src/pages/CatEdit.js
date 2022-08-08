@@ -30,8 +30,8 @@ class CatEdit extends Component {
     render() {
         return(
             <>
-                <h1> CatEdit</h1>
-                <Form>
+                
+                <Form style={{margin:"30px"}}>
                     <FormGroup >
                         <Label for="name">Name</Label>
                         <Input 

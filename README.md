@@ -1,1 +1,0 @@
-Need to look at CatIndex.js , throwing a warning for child component with unique id when using <div> and <center> for styling.

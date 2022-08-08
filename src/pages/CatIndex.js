@@ -7,7 +7,6 @@ class CatIndex extends Component {
         // console.log(this.props.cats)
         return(
             <>
-                {/* <h1>All our members</h1> */}
                 <Row>
                 {this.props.cats && this.props.cats.map(cats => {
                     return(
@@ -32,3 +31,4 @@ class CatIndex extends Component {
 }
 
 export default CatIndex
+                
