@@ -18,7 +18,10 @@
   color: white;
   text-align: center;
   height: 20vh;
-  background:linear-gradient(to top,#900000,#F1B416 )
+  background:linear-gradient(to top,#900000,#F1B416 );
+  position: relative;
+
+
   
 }
 
@@ -43,6 +46,7 @@ center {
   background-color: #F1B416;
   margin-top: -8px;
 }
+
 
 /* .card {
   height: 50vh;

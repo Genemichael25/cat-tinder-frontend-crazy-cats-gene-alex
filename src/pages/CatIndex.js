@@ -10,7 +10,7 @@ class CatIndex extends Component {
                 <h1>All our members</h1>
                 {this.props.cats && this.props.cats.map(cats => {
                     return(
-                        <Card  key={cats.id}>
+                        <Card style={{backgroundColor:"orange"}}  key={cats.id}>
                             <CardImg style = {{height:"auto", width:"auto"}} src={cats.image} alt="Card image cap" />
                             <CardBody>
                               <CardTitle>{cats.name}</CardTitle>

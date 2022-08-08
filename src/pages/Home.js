@@ -9,8 +9,8 @@ class Home extends Component {
             <>
                 <div className="home">
                     <center>
-                        <h1>Home</h1>
-                        <img style={{height:"100px", width:"auto" }} src={africanlion} ></img>
+
+                        <img style={{height:"300px", width:"auto" }} src={africanlion} ></img>
                     </center>
                 </div>
             </>
