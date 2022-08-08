@@ -36,8 +36,8 @@ class CatNew extends Component {
         
         return(
             <>
-                <h1> CatNew</h1>
-                <Form>
+      
+                <Form style={{margin:"30px"}}>
                     <FormGroup>
                         <Label for="name">Name</Label>
                         <Input type="text" name="name" onChange={this.handleChange} value={this.state.newCat.name} />
@@ -59,10 +59,10 @@ class CatNew extends Component {
                         <Input type="text" name="image" onChange={this.handleChange} value={this.state.newCat.image}/>
                     </FormGroup>
  
+                    <Button name="submit" onClick={this.handleSubmit}> Create a New Profile </Button>
+                    {this.state.submitted && <Redirect to="/catindex" />}
                 </Form>
 
-                <Button name="submit" onClick={this.handleSubmit}> Create a New Profile </Button>
-                {this.state.submitted && <Redirect to="/catindex" />}
 
             </>
         )

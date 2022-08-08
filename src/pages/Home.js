@@ -10,7 +10,7 @@ class Home extends Component {
                 <div className="home">
                     <center>
 
-                        <img style={{height:"300px", width:"auto" }} src={africanlion} ></img>
+                        <img style={{height:"300px", width:"auto" }} src={africanlion} alt="home lion" ></img>
                     </center>
                 </div>
             </>
