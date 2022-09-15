@@ -17,7 +17,7 @@ class CatIndex extends Component {
                                     <CardTitle>{cats.name}</CardTitle>
                                     <CardSubtitle>Age:{cats.age}</CardSubtitle>
                                     <NavLink to={`/catshow/${cats.id}`}>
-                                        <Button>More info here</Button>
+                                        <Button>About Me</Button>
                                     </NavLink>
                                 </CardBody>
                             </Card>
