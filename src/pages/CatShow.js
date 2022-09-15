@@ -16,12 +16,12 @@ class CatShow extends Component {
                         <CardText>I am {this.props.cat.age} years old. I enjoy  {this.props.cat.enjoys}.</CardText>
                         <NavLink to={`/catedit/${this.props.cat.id}`}>
                             <Button>
-                            Update Cat
+                            Update
                             </Button>
                         </NavLink>
                         <br></br>
                         <NavLink to={'/catindex'}>
-                        <Button onClick={() => this.props.deleteCat(cat.id)}>Delete Cat</Button>
+                        <Button onClick={() => this.props.deleteCat(cat.id)}>Delete</Button>
                         </NavLink>                    
                     </Card>
                 </Col>
